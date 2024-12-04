@@ -7,7 +7,7 @@ class UnionFind {
   vector<int> parent, rank;
 
  public:
-  UnionFind(int n) : parent(n), rank(n, 0) {
+  UnionFind(int n) : parent(n + 1), rank(n + 1, 0) {
     for (int i = 0; i < n; ++i) {
       parent[i] = i;
     }
