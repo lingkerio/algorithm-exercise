@@ -1,0 +1,15 @@
+Diagnostics:
+  Suppress: ["type_unsupported"]
+  # ClangTidy: See file `.clang-tidy`
+  UnusedIncludes: Strict
+  # MissingIncludes: Strict  # Too many false positive
+Index:
+  Background: Build
+  StandardLibrary: Yes
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  Designators: Yes
+Hover:
+  ShowAKA: Yes
