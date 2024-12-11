@@ -12,7 +12,7 @@ unordered_map<int, int> depth_map, parent_map;
 
 pair<int, int> calculateDepthWidth(int root, int n) {
   queue<pair<int, int>> q;
-  vector<bool> visited(n + 1, false);
+  vector<int> visited(n + 1, false);
   vector<int> level_count(n, 0);
   int max_depth = 0;
 
